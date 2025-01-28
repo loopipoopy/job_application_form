@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5edc7ec9-6091-4ff9-baa4-179ee635bf29" name="Changes" comment="Созданы классы, репозитории, контроллер, основной класс запускающий приложение. Добавлен DockerFile для создания и запуска контейнера через docker." />
+    <list default="true" id="5edc7ec9-6091-4ff9-baa4-179ee635bf29" name="Changes" comment="Созданы классы, репозитории, контроллер, основной класс запускающий приложение. Добавлен DockerFile для создания и запуска контейнера через docker.">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -198,7 +201,7 @@
       <updated>1737184018813</updated>
       <workItem from="1737999277000" duration="1528000" />
       <workItem from="1738090186246" duration="858000" />
-      <workItem from="1738091057525" duration="4132000" />
+      <workItem from="1738091057525" duration="5173000" />
     </task>
     <task id="LOCAL-00001" summary="Classes added: Candidate(+Document), Contacts(+RelativesContacts), Address, Education and Courses. To the file &quot;pom.xml &quot; added dependency for Lombok">
       <option name="closed" value="true" />
