@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5edc7ec9-6091-4ff9-baa4-179ee635bf29" name="Changes" comment="Созданы классы, репозитории, контроллер, основной класс запускающий приложение">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Address.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Candidate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Candidate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Contacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Contacts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Courses.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Courses.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Document.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Document.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Education.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/Education.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/RelativesContacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/project/job_application_form/model_class/RelativesContacts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/job-application-form-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-application-form-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/job-application-form-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/job-application-form-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.project.job_application_form.JobApplicationFormApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.project.job_application_form.JobApplicationFormApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.project.job_application_form.JobApplicationFormApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.project.job_application_form.JobApplicationFormApplicationTests.txt" afterDir="false" />
-    </list>
+    <list default="true" id="5edc7ec9-6091-4ff9-baa4-179ee635bf29" name="Changes" comment="Созданы классы, репозитории, контроллер, основной класс запускающий приложение. Добавлен DockerFile для создания и запуска контейнера через docker." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -218,7 +198,7 @@
       <updated>1737184018813</updated>
       <workItem from="1737999277000" duration="1528000" />
       <workItem from="1738090186246" duration="858000" />
-      <workItem from="1738091057525" duration="2975000" />
+      <workItem from="1738091057525" duration="3522000" />
     </task>
     <task id="LOCAL-00001" summary="Classes added: Candidate(+Document), Contacts(+RelativesContacts), Address, Education and Courses. To the file &quot;pom.xml &quot; added dependency for Lombok">
       <option name="closed" value="true" />
@@ -236,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737827484336</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Созданы классы, репозитории, контроллер, основной класс запускающий приложение. Добавлен DockerFile для создания и запуска контейнера через docker.">
+      <option name="closed" value="true" />
+      <created>1738095149274</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738095149274</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -273,6 +261,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Classes added: Candidate(+Document), Contacts(+RelativesContacts), Address, Education and Courses. To the file &quot;pom.xml &quot; added dependency for Lombok" />
     <MESSAGE value="Созданы классы, репозитории, контроллер, основной класс запускающий приложение" />
-    <option name="LAST_COMMIT_MESSAGE" value="Созданы классы, репозитории, контроллер, основной класс запускающий приложение" />
+    <MESSAGE value="Созданы классы, репозитории, контроллер, основной класс запускающий приложение. Добавлен DockerFile для создания и запуска контейнера через docker." />
+    <option name="LAST_COMMIT_MESSAGE" value="Созданы классы, репозитории, контроллер, основной класс запускающий приложение. Добавлен DockerFile для создания и запуска контейнера через docker." />
   </component>
 </project>
