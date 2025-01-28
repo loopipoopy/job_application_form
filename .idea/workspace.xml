@@ -198,7 +198,7 @@
       <updated>1737184018813</updated>
       <workItem from="1737999277000" duration="1528000" />
       <workItem from="1738090186246" duration="858000" />
-      <workItem from="1738091057525" duration="3645000" />
+      <workItem from="1738091057525" duration="4132000" />
     </task>
     <task id="LOCAL-00001" summary="Classes added: Candidate(+Document), Contacts(+RelativesContacts), Address, Education and Courses. To the file &quot;pom.xml &quot; added dependency for Lombok">
       <option name="closed" value="true" />
@@ -244,6 +244,12 @@
         <entry key="MAIN">
           <value>
             <State>
+              <option name="COLUMN_ID_WIDTH">
+                <map>
+                  <entry key="Table.Default.Date.ColumnIdWidth" value="149" />
+                  <entry key="Table.GitHub.CommitStatus.ColumnIdWidth" value="15" />
+                </map>
+              </option>
               <option name="CUSTOM_BOOLEAN_PROPERTIES">
                 <map>
                   <entry key="Show.Git.Branches" value="true" />
