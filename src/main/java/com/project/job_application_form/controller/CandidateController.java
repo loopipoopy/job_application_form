@@ -2,7 +2,7 @@ package com.project.job_application_form.controller;
 
 import com.project.job_application_form.model_class.*;
 import com.project.job_application_form.repository.CandidateRepository;
-
+import io.swagger.annotations.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +17,7 @@ import java.util.Optional;
 
 @RestController // Объявляет класс как контроллер Spring REST
 @RequestMapping ("/candidates") // Указывает базовый URL для всех маршрутов в этом контроллере
+@Api(tags = "Candidate Management", description = "API для управления анкетами кандидатов")
 public class CandidateController {
 
     //статический логер с использованием библиотеки SLF4J и LoggerFactory
@@ -100,6 +101,8 @@ public class CandidateController {
 
     // Эндпоинт для получения пустого шаблона кандидата
     @GetMapping("/template")
+    @ApiOperation(value = "Получить шаблон кандидата", notes = "Возвращает пустой шаблон кандидата с дефолтными значениями")
+    @ApiResponse(code = 200, message = "Шаблон успешно возвращен")
     public ResponseEntity<Map<String, Object>> getCandidateTemplate() {
         // Инициализация шаблона кандидата с дефолтными значениями для связанных объектов
         logger.info("Запрос на получение шаблона кандидата");
@@ -112,6 +115,11 @@ public class CandidateController {
 
     // создание новой анкеты
     @PostMapping ("/create")
+    @ApiOperation(value = "Создать новую анкету кандидата", notes = "Создает новую анкету кандидата на основе переданных данных")
+    @ApiResponses({
+            @ApiResponse(code = 201, message = "Анкета успешно создана"),
+            @ApiResponse(code = 400, message = "Некорректные данные")
+    })
     private ResponseEntity<Map<String, Object>> createCandidate (@RequestBody Candidate candidate) {
         // Установить связь между Candidate и Contacts
         logger.info("Запрос на создание нового кандидата");
@@ -130,6 +138,11 @@ public class CandidateController {
 
     // поиск анкеты
     @GetMapping ("/{id}")
+    @ApiOperation(value = "Получить анкету кандидата по ID", notes = "Возвращает анкету кандидата по указанному ID")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "Анкета найдена"),
+            @ApiResponse(code = 404, message = "Анкета не найдена")
+    })
     public ResponseEntity<Map<String, Object>> getCandidate (@PathVariable Long id) {
         logger.info("Запрос на получение кандидата с id: {}", id);
         Optional<Candidate> candidateOptional = candidateRepository.findById(id);
@@ -151,6 +164,11 @@ public class CandidateController {
 
     // обновление анкеты
     @PutMapping ("/{id}")
+    @ApiOperation(value = "Обновить анкету кандидата", notes = "Обновляет анкету кандидата по указанному ID")
+    @ApiResponses({
+            @ApiResponse(code = 200, message = "Анкета успешно обновлена"),
+            @ApiResponse(code = 404, message = "Анкета не найдена")
+    })
     public ResponseEntity<Map<String, Object>> updateCandidate (@PathVariable Long id, @RequestBody Candidate candidate) {
         logger.info("Запрос на обновление кандидата с id: {}", id);
         if (candidateRepository.existsById(id)) {
@@ -167,6 +185,11 @@ public class CandidateController {
 
     // Удаление кандидата
     @DeleteMapping ("/{id}")
+    @ApiOperation(value = "Удалить анкету кандидата", notes = "Удаляет анкету кандидата по указанному ID")
+    @ApiResponses({
+            @ApiResponse(code = 204, message = "Анкета успешно удалена"),
+            @ApiResponse(code = 404, message = "Анкета не найдена")
+    })
     public ResponseEntity<Candidate> deleteCandidate (@PathVariable Long id) {
         logger.info("Запрос на удаление кандидата с id: {}", id);
         if (candidateRepository.existsById(id)) {
